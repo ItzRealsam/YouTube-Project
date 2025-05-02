@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YouTube Clone</title>
+
+  <link rel="stylesheet" href="Styles/general.css">
+  <link rel="stylesheet" href="Styles/header.css">
+  <link rel="stylesheet" href="Styles/sidebar.css">
+  <link rel="stylesheet" href="Styles/video.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="top-bar">
+    <div class="left-section">
+      <div class="nav-tab">
+        <img src="Icons/hamburger-menu.svg"
+        alt="hamburger menu for sidebar"
+        class="nav-menu">
+      </div>
+      <div class="brand-logo">
+        <img src="Icons/youtube-logo.svg"
+        alt="Youtube Logo" 
+        class="YT-logo">
+      </div>
+    </div>
+    <div class="middle-section">
+      <input type="text"
+      placeholder="Search"
+      class="search-bar">
+      <button class="search-button">
+        <img src="Icons/search.svg" 
+        alt="Search button icon" 
+        class="button-icon">
+        <div class="tooltip">
+          Search
+        </div>
+      </button>
+      <button class="voice-search-button">
+        <img src="Icons/voice-search-icon.svg" 
+        alt="Search button icon" 
+        class="button-icon">
+        <div class="tooltip">
+          Voice Search
+        </div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="nav-tab">
+        <img src="Icons/upload.svg" 
+        alt="" 
+        class="right-icons">
+        <div class="tooltip">
+          Upload
+        </div>
+      </div>
+      <div class="nav-tab">
+        <img src="Icons/youtube-apps.svg" 
+        alt="" 
+        class="right-icons">
+        <div class="tooltip">
+          YouTube Apps
+        </div>
+      </div>
+      <div class="nav-tab">
+        <div class="notification-container">
+          <img src="Icons/notifications.svg" 
+          alt="" 
+          class="right-icons">
+          <div class="notification-count">
+            3
+          </div>
+          <div class="tooltip">
+            Notifications
+          </div>
+        </div>
+      </div>
+      <div class="nav-tab">
+        <img src="Images/realsam.pro-avi.png" 
+        alt="User profile image" 
+        class="user-avi">
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+
+  <nav class="sidebar">
+    <div class="sidebar-tab">
+      <img src="Icons/home.svg" 
+      alt="" 
+      class="sidebar-icon">
+      <p class="sidebar-title">
+        Home
+      </p>
+    </div>
+    <div class="sidebar-tab">
+      <img src="Icons/explore.svg" 
+      alt="" 
+      class="sidebar-icon">
+      <p class="sidebar-title">
+        Explore
+      </p>
+    </div>
+    <div class="sidebar-tab">
+      <img src="Icons/subscriptions.svg" 
+      alt="" 
+      class="sidebar-icon">
+      <p class="sidebar-title">
+        Subscriptions
+      </p>
+    </div>
+    <div class="sidebar-tab">
+      <img src="Icons/originals.svg" 
+      alt="" 
+      class="sidebar-icon">
+      <p class="sidebar-title">
+        Orginials
+      </p>
+    </div>
+    <div class="sidebar-tab">
+      <img src="Icons/youtube-music.svg" 
+      alt="" 
+      class="sidebar-icon">
+      <p class="sidebar-title">
+        YouTube Music
+      </p>
+    </div>
+    <div class="sidebar-tab">
+      <img src="Icons/library.svg" 
+      alt="" 
+      class="sidebar-icon">
+      <p class="sidebar-title">
+        Library
+      </p>
+    </div>
+  </nav>
+
+  <!-- Video grid -->
+  <main>
+
+    <section class="video-grids">
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/Olamide-Wizkid-Kai.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            3:30
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/olamide.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/olamide.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    Olamide
+                  </div>
+                  <div class="subscribers-count">
+                    15M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                Olamide, Wizkid - Kai! (Official Video)
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                Olamide
+                <div class="tooltip">
+                  Olamide
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                79K views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                3 hours ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/GiannisHaliburton.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            3:30
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/HoH.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/HoH.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    House of Highlights
+                  </div>
+                  <div class="subscribers-count">
+                    15M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                GiannisHaliburton
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                House of Highlights
+                <div class="tooltip">
+                  House of Highlights
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                79K views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                3 hours ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/HOUGSWg5.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            3:30
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/goat.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/goat.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    Olamide
+                  </div>
+                  <div class="subscribers-count">
+                    15M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                Olamide, Wizkid - Kai! (Official Video)
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                GOAT
+                <div class="tooltip">
+                  GOAT
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                79K views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                3 hours ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/doncic.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            7:35
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/jordan.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/jordan.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    Jordan
+                  </div>
+                  <div class="subscribers-count">
+                    15M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                The Trial of Luka Dončić | Jordan Brand
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                Jordan
+                <div class="tooltip">
+                  Jordan
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                3.1M views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                9 days ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/kandsza.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            5:12
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/k-dot.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/k-dot.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    Kendrick Lamar
+                  </div>
+                  <div class="subscribers-count">
+                    19.1M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                Kendrick Lamar & SZA - luther
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                Kendrick Lamar
+                <div class="tooltip">
+                  Kendrick Lamar
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                18M views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                2 weeks ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/HMTLCSS.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            6:31:24
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/SSD.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/SSD.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    SuperSimpleDev
+                  </div>
+                  <div class="subscribers-count">
+                    638K subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                HTML & CSS Full Course - Beginner to Pro
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                SuperSimpleDev
+                <div class="tooltip">
+                  SuperSimpleDev
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                14M views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                3 years ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/Olamide-Wizkid-Kai.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            3:30
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/olamide.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/olamide.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    Olamide
+                  </div>
+                  <div class="subscribers-count">
+                    15M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                Olamide, Wizkid - Kai! (Official Video)
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                Olamide
+                <div class="tooltip">
+                  Olamide
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                79K views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                3 hours ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-card">
+        <div class="video-thumbnail-container">
+          <a href="video.html" 
+          class="video-link">
+          <img src="Images/Olamide-Wizkid-Kai.avif" 
+          alt="video thumbnail" 
+          class="video-thumbnail">
+          <div class="video-duration">
+            3:30
+          </div>
+          </a>  
+        </div>
+        <div class="video-details">
+          <a href="#" 
+            class="channel-link">
+            <div class="video-channel">
+              <img src="Images/olamide.jpg"
+               alt="channel profile picture" 
+               class="channel-avi">
+              <div class="channel-tooltip">
+                <div class="video-channel-2">
+                  <img src="Images/olamide.jpg"
+                    alt="channel profile picture" 
+                    class="channel-avi-2">
+                </div>
+                <div class="channel-info">
+                  <div class="channel-name-2">
+                    Olamide
+                  </div>
+                  <div class="subscribers-count">
+                    15M subscribers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="video-info">
+            <a href="video.html" 
+              class="video-link">
+              <div class="video-title">
+                Olamide, Wizkid - Kai! (Official Video)
+              </div>
+            </a>
+            <a href="#" 
+              class="channel-link">
+              <div class="channel-name">
+                Olamide
+                <div class="tooltip">
+                  Olamide
+                </div>
+              </div>
+            </a>
+            <div class="video-analytics">
+              <div class="video-views">
+                79K views
+              </div>
+              &#183;
+              <div class="video-upload-time">
+                3 hours ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+
+  </main>
+
+</body>
+</html>

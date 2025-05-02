@@ -1,0 +1,204 @@
+div, p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.video-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+.video-link {
+  display: flex;
+}
+
+.video-thumbnail-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+
+  object-fit: cover;
+
+  margin-bottom: 12px;
+}
+
+.video-thumbnail:hover {
+  border-radius: 0px;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 20px;
+  right: 8px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  font-size: 12px;
+}
+
+.video-details {
+  display: flex;
+
+  flex: 1;
+}
+
+.video-channel {
+  display: flex;
+
+  position: relative;
+}
+
+.channel-avi {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 18px;
+
+  margin-right: 12px;
+}
+
+.channel-tooltip {
+  position: absolute;
+  z-index: 1;
+  bottom: -80px;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.video-channel:hover .channel-tooltip {
+  opacity: 1;
+}
+
+.channel-avi-2 {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 28px;
+  margin-right: 12px;
+}
+
+.channel-name-2 {
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #0f0f0f;
+
+  margin-bottom: 4px;
+
+  white-space: nowrap;
+}
+
+.subscribers-count {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  white-space: nowrap;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f0f0f;
+
+  margin-bottom: 4px;
+}
+
+.video-analytics {
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+.channel-name, .video-views, .video-upload-time {
+  font-size: 14px;
+  color: #606060
+}
+
+.channel-name {
+  position: relative;
+}
+
+.channel-name:hover {
+  color: #0f0f0f;
+}
+
+.video-card .tooltip {
+  position: absolute;
+  top: -32px;
+
+  padding: 4px 8px;
+
+  border-radius: 4px;
+
+  background-color: rgba(66, 66, 66, 0.9);
+  color: white;
+  font-size: 12px;
+
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+
+  white-space: nowrap;
+}
+
+.channel-name:hover .tooltip {
+  opacity: 1;
+}
+
+.video-views {
+  margin-right: 4px;
+}
+
+.video-upload-time {
+  margin-left: 4px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 350px) {
+  .video-grids {
+    grid-template-columns: 1fr;
+  }  
+}
+
+@media (min-width: 350.01px) and (max-width: 750px) {
+  .video-grids {
+    grid-template-columns: 1fr 1fr;
+  }  
+}
+
+@media (min-width:750.01px) and (max-width: 1200px) {
+  .video-grids {
+    grid-template-columns: 1fr 1fr 1fr;
+  }  
+}
